@@ -1,4 +1,4 @@
-\documentclass[letter, 12pt] {article}
+\documentclass[letter, 11pt] {article}
 
 \usepackage{tabularx}
 \usepackage{graphicx}
@@ -46,18 +46,33 @@
 \maketitle
 \thispagestyle{empty}
 
-\tableofcontents
-
-\newpage
-
-
 \setcounter{page}{1}
 
 	\section*{Introduction}
 	
+	Dans le cadre de notre quatrième année à l'école d'ingénieur de Polytech' Montpellier, en informatique et gestion, il nous a été demandé de réaliser un projet transversal.
+
+	Ce projet se basait sur la conception d'un logiciel pour la gestion des notes à Polytech' Montpellier. Autrement dit, pour l'ensemble des étudiants de l'école, il fallait pouvoir récupérer et saisir leurs notes sur une plateforme internet. Les moyennes de chaque matière sont ramenées par les professeurs aux secrétaires, qui doivent rentrer ces notes sur la plateforme dédiée.
+
+	En plus de cette saisie, une gestion des responsables de chaque filière devait être implémentée, permettant aux utilisateurs de pouvoir consulter depuis leurs ordinateurs les notes de leurs étudiants.
+
+	Un premier rapport d'activité a été établi et rendu pour le premier semestre. Celui-ci nous a permis de poser les bases de la conceptions : nous avons déterminé avec précision les besoins de l'utilisateur, par le biais d'un cahier des charges que nous avons nous-mêmes établi. A la suite de quoi nous avons réalisé la conception à l'aide de différents diagrammes UML. Tout d'abord, nous avons créé le diagramme des classes correspondant aux besoins du logiciel, puis les diagrammes de cas d'utilisation qui retranscrivent les futures besoins à réaliser.
+
+	A la suite de ce premier rendu vient une nouvelle étape de la conception. Toutefois, celle-ci est plus proche de la programmation, plus technique.Cela nous permet de cerner et analyser les différentes phases de développement que nécessite le projet, et les diverses fonctionnalités utilisées.
+
+	Voici donc le rapport présentant les différents diagrammes de la seconde étape du développement, accompagné du diagramme de classes et des diagrammes d'utilisation revus et corrigés.
+	
+	\newpage
+	
+	\tableofcontents
+	
 	\section{Le diagramme de classes}
 	
+	Ayant déjà détaillé et expliqué en cours, il n'est nullement nécessaire de détailler de nouveau l'ensemble du diagramme de classes. Voici donc ci-dessous le diagramme sur lequel nous nous sommes étalonnés tout au long de cette dernière étape de la conception.
+	
 	\section{Les cas d'utilisation}
+	
+	Tout comme a été présenté le diagramme de classe, voici les diagrammes d'utilisation que nous avons réalisé.  
 	
 	\section{Les diagrammes de collaboration}
 	
@@ -65,11 +80,37 @@
 	
 	\section{Le diagramme d'activité}
 	
-	\section{Conclusion du projet}
+	\section{Le diagramme de machines d'état}
+	
+	Le diagramme de machines d'état correspond, dans une certaine mesure, à une sorte d'organigramme dédié à ce qui était autrefois appelé la programmation structurée. Ici, notre diagramme correspond au parcours d'un étudiant, pour chaque année et ce jusqu'à la fin de son cursus.
+	Le point de départ consiste en l'extraction de l'étudiant du logiciel Apogee. Etant donné qu'il est déjà inscrit au moment où il va commencer son son année, cette étape est gérée par ce logiciel.
+
+	A partir du moment où l'étudiant est extrait, il va être noté pour chacune de ses ECUE. Nous allons donc créer des instances des classes concernées, et ce jusqu'à ce que toutes les notes des ECUE soient connues. Nous ne passons donc pas à l'instanciation d'une note d'UE tant que la totalité des notes d'ECUE ne sont pas données. Dans le même laps de temps, il est possible que l'étudiant passe son certificat. A la suite de quoi nous allons instancier la classe concernant cet examen.
+
+	Lorsque cette étape est terminée, toutes les notes d'UE sont calculées. Ceci étant fait, nous pouvons instancier la note du semestre.
+	C'est le jury qui décide de la suite du cursus : si l'étudiant a obtenu la moyenne générale satisfaisante, ainsi que pour chacune de ses UE, l'étudiant va pouvoir directement bénéficier de l'état d'admission au semestre.
+	Mais s'il manque des points à l'élève, celui-ci pourra bénéficier de certains points donnés par les jurys, ce qui lui permettra d'obtenir l'admission au semestre.
+
+	Si l'élève ne rentre dans aucun de ces deux cas, il devra passer par les rattrapages. Au point de vue du diagramme, ceci va consister à instancier l'ensemble des notes qu'il a obtenu lors de cette session, c'est-à-dire de modifier les notes qu'il a obtenu dans les ECUE. Une fois que l'ensemble des rattrapages sont effectués, l'étudiant sera admis pour le semestre 2 quels que soient les résultats obtenus. Ce qui permet à l'étudiant de pouvoir se rattraper s'il manque uniquement des points concernant la moyenne générale, et de compenser lors du second semestre.
+
+	Le deuxième semestre n'ayant aucune différence particulière avec le premier, nous avons fait le choix de reprendre un système identique. Ceci permet à notre schéma de rester le plus générique possible. Nous effectuons donc l'instanciation d'ECUE et du certificat (si nécessaire), puis l'instanciation d'UE pour arriver au semestre. Les potentiels rattrapages donnent toutefois lieu à l'état "Admis semestre 2". Ce qui veut dire que l'étudiant a terminé son semestre. C'est lors de l'instanciation de la moyenne générale de l'étudiant - la note de l'étape - que l'état final va déterminer la fin d'année de l'étudiant.
+	Si celui-ci n'a pas été admis pour l'année, il sera alors dans l'état "Redoublement" et devra refaire l'année.
+	
+	Si l'élève a obtenu son année, en revanche, divers choix s'offrent à lui. Soit l'élève est dans l'un des cursus entre la première et la quatrième année, auquel cas il pourra normalement passer à l'année suivante.
+	Si l'étudiant est en cinquième année, en revanche, deux états finaux sont possibles. Soit il a passé le certificat et il peut obtenir son diplôme normalement, soit il dispose du statut "Diplôme obtenu sans certificat". Ce sera alors à lui de passer le diplôme, plus tard, afin de valider complètement le diplôme. Toutefois, ce n'est pas à prendre en compte dans le cursus d'une année à passer à Polytech', d'où la non prise en compte dans le diagramme ci-dessus.
+
+	Nous noterons aussi qu'il est possible qu'à chaque étape, l'étudiant peut être exclu du cursus qu'il suit. Cela implique évidemment une faute grave de sa part, mais étant donné que cela peut arriver à tout moment de l'année, il apparaît comme état final pour chaque état du cursus suivi.
+	En revanche, l'état d'abandon d'un étudiant n'est signalé qu'au jury de chaque semestre. Il est donc inutile de le mettre en évidence comme il l'est effectué pour l'exclusion.
+	
+	\section{Conclusion du rapport d'activité}
+	
+	Une fois le diagramme de classes établi, ces différents diagrammes nous ont paru plus évidents à réaliser. Tout d'abord, le diagramme de machine d'état nous permet de mieux visualiser les différents liés établis entre les classes, en les instanciant pour passer de l'une à l'autre. Les diagrammes de collaboration. Le diagramme d'activité, quand à lui, se positionne plutôt du côté utilisateur, afin de relever l'activité réalisée par l'utilisateur, comme nom nom l'indique. Les diagrammes de séquence et de collaboration nous permettent, comme pour le diagramme de machine d'état, de mettre en oeuvre (.....) passer d'une classe à l'autr
 	
 	\section{Bilan du projet transversal}
 	
-		
+	Il est très intéressant de pouvoir se rendre compte de l'évolution de la conception d'un tel projet. Mais il est d'autant plus intéressant de voir comment passer de la conception au développement, afin de concevoir le logiciel dans son intégralité. Nous avons pu nous approcher de la phase de développement, en réfléchissant à la manière d'implémenter les fonctionnalités. Toutefois, nous devons avouer que cela ne nous a pas toujours semblé facile, et que nous n'étions pas trop de quatre pour réfléchir et débattre pour chacun des diagrammes à réaliser. Mais chacun de nous a saisi l'utilité de ces derniers pour la phase de développement. Bien que nous n'ayons pas été amené à effectuer des phases de test ou de dialogues avec le client, cela nous donne une bonne vision des tâches que nous serons amenés à effectuer plus tard. 
+	
+	Même si nous jugeons que certaines phases du projet auraient pu être menées avec plus d'efficacité, nous sommes toutefois satisfaits du travail que nous avons réalisé. Nous espérons donc que vous êtes satisfaits du travail que nous avons réalisé, et devons maintenant nous atteler au développement du logiciel dans les plus brefs délais.
 		
 \end{document}
 					
