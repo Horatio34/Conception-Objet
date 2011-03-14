@@ -1,0 +1,24 @@
+Le diagramme d’états-transitions correspond dans une large mesure à ce que l’on a
+appelé un organigramme à l’époque de la programmation dite structurée.
+
+Ici, notre diagramme correspond au parcours d'un étudiant pour chaque année, et ce jusqu'à la fin de son cursus.
+Le point de départ consiste en l'extraction de l'étudiant du logiciel Apogee. Etant donné qu'il est déjà inscrit au moment où il va commencer son son année, tout est géré par ce logiciel.
+
+A partir du moment où l'étudiant est extrait, il va être noté pour chacune de ses ECUE. Nous allons donc créer des instances des classes concernées, et ce jusqu'à ce que toutes les notes des ECUE soient connues. Nous ne passons donc pas à l'instanciation d'une note d'UE tant que la totalité des notes d'ECUE ne sont pas données. Dans le même laps de temps, il est possible que l'étudiant passe son certificat. A la suite de quoi l'on va instancier la classe concernant cet examen.
+
+Lorsque cette étape est terminée, toutes les notes d'UE sont calculées. Ceci étant fait, nous pouvons instancier la note du semestre.
+C'est le jury qui décide de la suite du cursus : si l'étudiant a obtenu la moyenne générale satisfaisante, ainsi que pour chacune de ses UE, l'étudiant va pouvoir directement bénéficier de l'état d'admission au semestre.
+Autrement, s'il manque des points à l'élève, celui-ci pourra bénéficier de certains points donnés par les jurys, ce qui lui permettra d'obtenir l'admission au semestre.
+
+Si l'élève ne rentre dans aucun de ces deux cas, il lui faudra passer par les rattrapages. Au point de vue du diagramme, ceci va consister à instancier l'ensemble des notes qu'il a obtenu lors de cette session, c'est-à-dire de modifier les notes qu'il a obtenu dans les ECUE. Une fois que l'ensembles des rattrapages sont passés, l'étudiant sera admis pour le semestre 2, quels que soient les résultats obtenus. Ce qui permet à l'étudiant de pouvoir se rattraper s'il manque uniquement des points concernant la moyenne générale, afin de pouvoir compenser lors du second semestre.
+
+Le deuxième semestre n'ayant aucune différence particulière avec le premier, nous avons donc repris le même système. Nous effectuons donc l'instancation d'ECUE/certificat (si nécessaire), puis l'instanciation d'UE pour arriver au semestre. Les potentiels rattrapages donnent toutefois lieu à l'état "Admis semestre 2". Ce qui veut dire que l'étudiant a terminé son semestre. C'est lors de l'instanciation de la moyenne générale de l'étudiant, la note de l'étape, que l'état final va déterminer la fin d'année de l'étudiant.
+Si celui-ci n'a pas été admis pour l'année, il sera alors dans l'état "Redoublement" et devra refaire l'année.
+Si l'élève a obtenu son année, en revanche, divers choix s'offrent à lui. Soit l'élève est dans l'un des cursus entre la première et la quatrième année, auquel cas il pourra normalement passer à l'année suivante.
+SI l'étudiant est en cinquième année, en revanche, deux états finaux sont possibles. Soit il a passé le certificat et il peut obtenir son diplôme normalement, soit il dispose du statut "Diplôme obtenu sans certificat". Ce sera alors à lui de passer le diplôme, plus tard, afin de valider complètement le diplôme. Toutefois, ce n'est pas à prendre en compte dans le cursus d'une année à passer à Polytech', d'où la non prise en compte dans le diagramme ci-dessus.
+
+
+
+
+Nous noterons aussi qu'il est possible qu'à chaque étape, l'étudiant peut être exclu du cursus qu'il suit. Cela implique évidemment une faute grave de sa part, mais étant donné que cela peut arriver à tout moment de l'année, il apparaît comme état final pour chaque état "de base" du cursus.
+En revanche, l'état d'abandon d'un étudiant n'est signalé qu'au jury de chaque semestre. Il ne sert donc à rien de le mettre en évident comme il l'est effectué pour l'exclusion.

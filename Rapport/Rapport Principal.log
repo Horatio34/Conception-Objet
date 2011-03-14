@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.11.4)  13 MAR 2011 00:46
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.11.4)  14 MAR 2011 20:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,28 +527,325 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 [1
 
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] (./Rapport Principal.toc)
+[2] (./Rapport Principal.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 13.
+ [3])
 \tf@toc=\write3
 \openout3 = `"Rapport Principal.toc"'.
 
- [3] [4] [5] (./Rapport Principal.aux) ) 
+
+<../Diagramme_de_classes/Diagramme_classe.png, id=16, 729.72626pt x 905.3825pt>
+File: ../Diagramme_de_classes/Diagramme_classe.png Graphic file (type png)
+<use ../Diagramme_de_classes/Diagramme_classe.png>
+Overfull \hbox (38.77367pt too wide) in paragraph at lines 73--74
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4]
+
+LaTeX Warning: Text page 5 contains only floats.
+
+[5 <../Diagramme_de_classes/Diagramme_classe.png>] [6] [7]
+<../UseCase/UseCaseHautNiveau/UseCase_HautNiveau_General.png, id=33, 360.34625p
+t x 215.80624pt>
+File: ../UseCase/UseCaseHautNiveau/UseCase_HautNiveau_General.png Graphic file 
+(type png)
+
+<use ../UseCase/UseCaseHautNiveau/UseCase_HautNiveau_General.png>
+<../UseCase/UseCaseHautNiveau/Consultation.png, id=34, 340.27126pt x 282.05376p
+t>
+File: ../UseCase/UseCaseHautNiveau/Consultation.png Graphic file (type png)
+ <use ../UseCase/UseCaseHautNiveau/Consultation.png> [8 <../UseCase/UseCaseHaut
+Niveau/UseCase_HautNiveau_General.png> <../UseCase/UseCaseHautNiveau/Consultati
+on.png>]
+<../UseCase/UseCaseHautNiveau/Insertion.png, id=41, 367.3725pt x 273.02pt>
+File: ../UseCase/UseCaseHautNiveau/Insertion.png Graphic file (type png)
+
+<use ../UseCase/UseCaseHautNiveau/Insertion.png> [9 <../UseCase/UseCaseHautNive
+au/Insertion.png>]
+<../UseCase/UseCaseHautNiveau/Modification.png, id=46, 389.455pt x 266.9975pt>
+File: ../UseCase/UseCaseHautNiveau/Modification.png Graphic file (type png)
+
+<use ../UseCase/UseCaseHautNiveau/Modification.png>
+Underfull \hbox (badness 10000) in paragraph at lines 161--162
+
+ []
+
+[10 <../UseCase/UseCaseHautNiveau/Modification.png>]
+<../UseCase/UseCaseMoyenNiveau/InsertionResponsable.png, id=51, 360.34625pt x 2
+44.915pt>
+File: ../UseCase/UseCaseMoyenNiveau/InsertionResponsable.png Graphic file (type
+ png)
+ <use ../UseCase/UseCaseMoyenNiveau/InsertionResponsable.png> [11 <../UseCase/U
+seCaseMoyenNiveau/InsertionResponsable.png>]
+<../UseCase/UseCaseMoyenNiveau/InsertionNote.png, id=56, 410.53375pt x 266.9975
+pt>
+File: ../UseCase/UseCaseMoyenNiveau/InsertionNote.png Graphic file (type png)
+ <use ../UseCase/UseCaseMoyenNiveau/InsertionNote.png>
+<../UseCase/UseCaseMoyenNiveau/ModificationProfil.png, id=57, 376.40625pt x 263
+.98625pt>
+File: ../UseCase/UseCaseMoyenNiveau/ModificationProfil.png Graphic file (type p
+ng)
+ <use ../UseCase/UseCaseMoyenNiveau/ModificationProfil.png> [12 <../UseCase/Use
+CaseMoyenNiveau/InsertionNote.png> <../UseCase/UseCaseMoyenNiveau/ModificationP
+rofil.png>]
+<../UseCase/UseCaseMoyenNiveau/ModificationResponsable.png, id=63, 385.44pt x 2
+61.97874pt>
+File: ../UseCase/UseCaseMoyenNiveau/ModificationResponsable.png Graphic file (t
+ype png)
+ <use ../UseCase/UseCaseMoyenNiveau/ModificationResponsable.png>
+<../UseCase/UseCaseMoyenNiveau/ModificationNoteDecision.png, id=64, 338.26375pt
+ x 254.9525pt>
+File: ../UseCase/UseCaseMoyenNiveau/ModificationNoteDecision.png Graphic file (
+type png)
+
+<use ../UseCase/UseCaseMoyenNiveau/ModificationNoteDecision.png> [13 <../UseCas
+e/UseCaseMoyenNiveau/ModificationResponsable.png> <../UseCase/UseCaseMoyenNivea
+u/ModificationNoteDecision.png>]
+<../UseCase/UseCaseBasNiveau/ChoixEleveStructure.png, id=71, 373.395pt x 222.83
+25pt>
+File: ../UseCase/UseCaseBasNiveau/ChoixEleveStructure.png Graphic file (type pn
+g)
+ <use ../UseCase/UseCaseBasNiveau/ChoixEleveStructure.png>
+Underfull \hbox (badness 10000) in paragraph at lines 237--238
+
+ []
+
+
+<../UseCase/UseCaseBasNiveau/ChoixEtudiantResponsableStructure.png, id=72, 409.
+53pt x 277.035pt>
+File: ../UseCase/UseCaseBasNiveau/ChoixEtudiantResponsableStructure.png Graphic
+ file (type png)
+
+<use ../UseCase/UseCaseBasNiveau/ChoixEtudiantResponsableStructure.png>
+<../UseCase/UseCaseBasNiveau/ChoixResponsableStructure.png, id=73, 384.43625pt 
+x 220.825pt>
+File: ../UseCase/UseCaseBasNiveau/ChoixResponsableStructure.png Graphic file (t
+ype png)
+ <use ../UseCase/UseCaseBasNiveau/ChoixResponsableStructure.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[14 <../UseCase/UseCaseBasNiveau/ChoixEleveStructure.png> <../UseCase/UseCaseBa
+sNiveau/ChoixEtudiantResponsableStructure.png>]
+<../UseCase/UseCaseBasNiveau/ConsultationInformation.png, id=79, 412.54124pt x 
+271.0125pt>
+File: ../UseCase/UseCaseBasNiveau/ConsultationInformation.png Graphic file (typ
+e png)
+ <use ../UseCase/UseCaseBasNiveau/ConsultationInformation.png>
+<../UseCase/UseCaseBasNiveau/ConsultationNote.png, id=80, 337.26pt x 245.91875p
+t>
+File: ../UseCase/UseCaseBasNiveau/ConsultationNote.png Graphic file (type png)
+ <use ../UseCase/UseCaseBasNiveau/ConsultationNote.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[15 <../UseCase/UseCaseBasNiveau/ChoixResponsableStructure.png> <../UseCase/Use
+CaseBasNiveau/ConsultationInformation.png>]
+<../UseCase/UseCaseBasNiveau/ConsultationStatistique.png, id=86, 376.40625pt x 
+198.7425pt>
+File: ../UseCase/UseCaseBasNiveau/ConsultationStatistique.png Graphic file (typ
+e png)
+ <use ../UseCase/UseCaseBasNiveau/ConsultationStatistique.png>
+[16 <../UseCase/UseCaseBasNiveau/ConsultationNote.png> <../UseCase/UseCaseBasNi
+veau/ConsultationStatistique.png>]
+<../UseCase/UseCaseBasNiveau/InsertionDonneesEnseignant.png, id=92, 372.39125pt
+ x 244.915pt>
+File: ../UseCase/UseCaseBasNiveau/InsertionDonneesEnseignant.png Graphic file (
+type png)
+ <use ../UseCase/UseCaseBasNiveau/InsertionDonneesEnseignant.png>
+<../UseCase/UseCaseBasNiveau/LiaisonDonneesEnseignant.png, id=93, 364.36125pt x
+ 244.915pt>
+File: ../UseCase/UseCaseBasNiveau/LiaisonDonneesEnseignant.png Graphic file (ty
+pe png)
+ <use ../UseCase/UseCaseBasNiveau/LiaisonDonneesEnseignant.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+<../UseCase/UseCaseTresBasNiveau/ChoixEtudiant.png, id=94, 410.53375pt x 252.94
+5pt>
+File: ../UseCase/UseCaseTresBasNiveau/ChoixEtudiant.png Graphic file (type png)
+
+ <use ../UseCase/UseCaseTresBasNiveau/ChoixEtudiant.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[17 <../UseCase/UseCaseBasNiveau/InsertionDonneesEnseignant.png>] [18 <../UseCa
+se/UseCaseBasNiveau/LiaisonDonneesEnseignant.png> <../UseCase/UseCaseTresBasNiv
+eau/ChoixEtudiant.png>]
+<../UseCase/UseCaseTresBasNiveau/ChoixResponsable.png, id=104, 541.02126pt x 27
+7.035pt>
+File: ../UseCase/UseCaseTresBasNiveau/ChoixResponsable.png Graphic file (type p
+ng)
+ <use ../UseCase/UseCaseTresBasNiveau/ChoixResponsable.png>
+<../UseCase/UseCaseTresBasNiveau/ChoixStructure.png, id=105, 340.27126pt x 225.
+84375pt>
+File: ../UseCase/UseCaseTresBasNiveau/ChoixStructure.png Graphic file (type png
+)
+ <use ../UseCase/UseCaseTresBasNiveau/ChoixStructure.png> [19 <../UseCase/UseCa
+seTresBasNiveau/ChoixResponsable.png> <../UseCase/UseCaseTresBasNiveau/ChoixStr
+ucture.png>]
+<../Diagrammes_collaboration/Consultation.png, id=112, 682.55pt x 396.48125pt>
+File: ../Diagrammes_collaboration/Consultation.png Graphic file (type png)
+
+<use ../Diagrammes_collaboration/Consultation.png>
+Overfull \hbox (5.75052pt too wide) in paragraph at lines 372--373
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[20]
+<../Diagrammes_collaboration/Insertion.png, id=116, 725.71124pt x 269.005pt>
+File: ../Diagrammes_collaboration/Insertion.png Graphic file (type png)
+
+<use ../Diagrammes_collaboration/Insertion.png>
+Overfull \hbox (35.96318pt too wide) in paragraph at lines 383--384
+ [][] 
+ []
+
+[21 <../Diagrammes_collaboration/Consultation.png> <../Diagrammes_collaboration
+/Insertion.png>]
+<../Diagrammes_collaboration/Impression_PV.png, id=122, 660.4675pt x 428.60126p
+t>
+File: ../Diagrammes_collaboration/Impression_PV.png Graphic file (type png)
+ <use ../Diagrammes_collaboration/Impression_PV.png> [22 <../Diagrammes_collabo
+ration/Impression_PV.png>]
+<../Diagrammes_collaboration/Rattrapages.png, id=127, 931.48pt x 444.66125pt>
+File: ../Diagrammes_collaboration/Rattrapages.png Graphic file (type png)
+
+<use ../Diagrammes_collaboration/Rattrapages.png>
+Overfull \hbox (86.86107pt too wide) in paragraph at lines 407--408
+ [][] 
+ []
+
+[23 <../Diagrammes_collaboration/Rattrapages.png>]
+<../Diagrammes_collaboration/Admission_en_sup.png, id=132, 659.46375pt x 350.30
+875pt>
+File: ../Diagrammes_collaboration/Admission_en_sup.png Graphic file (type png)
+ <use ../Diagrammes_collaboration/Admission_en_sup.png> [24 <../Diagrammes_coll
+aboration/Admission_en_sup.png>]
+<../Diagrammes_sequence/Diagramme_sequence_choix_action.png, id=137, 803.0pt x 
+674.52pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_choix_action.png Graphic file (
+type png)
+ <use ../Diagrammes_sequence/Diagramme_sequence_choix_action.png>
+Overfull \hbox (9.77249pt too wide) in paragraph at lines 434--435
+ [][] 
+ []
+
+[25 <../Diagrammes_sequence/Diagramme_sequence_choix_action.png>]
+<../Diagrammes_sequence/Diagramme_sequence_insertion_promo.png, id=143, 770.88p
+t x 1373.13pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_insertion_promo.png Graphic fil
+e (type png)
+
+<use ../Diagrammes_sequence/Diagramme_sequence_insertion_promo.png>
+
+LaTeX Warning: Float too large for page by 22.47618pt on input line 449.
+
+[26] [27 <../Diagrammes_sequence/Diagramme_sequence_insertion_promo.png>]
+<../Diagrammes_sequence/Diagramme_sequence_insertion_eleve.png, id=151, 1114.16
+25pt x 899.36pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_insertion_eleve.png Graphic fil
+e (type png)
+
+<use ../Diagrammes_sequence/Diagramme_sequence_insertion_eleve.png>
+Overfull \hbox (118.47209pt too wide) in paragraph at lines 460--461
+[][] 
+ []
+
+[28] [29 <../Diagrammes_sequence/Diagramme_sequence_insertion_eleve.png>]
+<../Diagrammes_sequence/Diagramme_sequence_insertion_ECUE.png, id=159, 1057.952
+5pt x 911.405pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_insertion_ECUE.png Graphic file
+ (type png)
+
+<use ../Diagrammes_sequence/Diagramme_sequence_insertion_ECUE.png>
+Overfull \hbox (88.68092pt too wide) in paragraph at lines 470--471
+[][] 
+ []
+
+[30 <../Diagrammes_sequence/Diagramme_sequence_insertion_ECUE.png>]
+<../Diagrammes_sequence/Diagramme_sequence_points_jurys.png, id=164, 397.485pt 
+x 1209.51875pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_points_jurys.png Graphic file (
+type png)
+
+<use ../Diagrammes_sequence/Diagramme_sequence_points_jurys.png>
+
+LaTeX Warning: Float too large for page by 1.15024pt on input line 484.
+
+[31] [32 <../Diagrammes_sequence/Diagramme_sequence_points_jurys.png>]
+<../Diagrammes_sequence/Diagramme_sequence_demande_PV.png, id=173, 600.2425pt x
+ 1373.13pt>
+File: ../Diagrammes_sequence/Diagramme_sequence_demande_PV.png Graphic file (ty
+pe png)
+ <use ../Diagrammes_sequence/Diagramme_sequence_demande_PV.png>
+[33] [34 <../Diagrammes_sequence/Diagramme_sequence_demande_PV.png>] [35]
+[36]
+<../Diagramme_activite/Diagramme_notation.png, id=187, 1374.13374pt x 1885.0425
+pt>
+File: ../Diagramme_activite/Diagramme_notation.png Graphic file (type png)
+ <use ../Diagramme_activite/Diagramme_notation.png>
+Overfull \hbox (77.61253pt too wide) in paragraph at lines 536--537
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 89.9165pt on input line 537.
+
+[37] [38 <../Diagramme_activite/Diagramme_notation.png>]
+<../Diagramme_activite/Diagramme_jury.png, id=196, 1253.68375pt x 1726.45pt>
+File: ../Diagramme_activite/Diagramme_jury.png Graphic file (type png)
+
+<use ../Diagramme_activite/Diagramme_jury.png>
+Overfull \hbox (29.43338pt too wide) in paragraph at lines 583--584
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 26.48064pt on input line 584.
+
+[39] [40 <../Diagramme_activite/Diagramme_jury.png>] [41]
+<../Diagramme_machine_etat/Machine_etat.png, id=207, 816.04875pt x 1220.56pt>
+File: ../Diagramme_machine_etat/Machine_etat.png Graphic file (type png)
+
+<use ../Diagramme_machine_etat/Machine_etat.png>
+Overfull \hbox (17.6018pt too wide) in paragraph at lines 611--612
+[][] 
+ []
+
+
+LaTeX Warning: Float too large for page by 68.25452pt on input line 612.
+
+[42] [43 <../Diagramme_machine_etat/Machine_etat.png>] [44]
+(./Rapport Principal.aux) ) 
 Here is how much of TeX's memory you used:
- 3897 strings out of 493747
- 53018 string characters out of 3143546
- 142552 words of memory out of 3000000
- 7146 multiletter control sequences out of 15000+200000
- 9416 words of font info for 33 fonts, out of 3000000 for 9000
+ 4090 strings out of 493747
+ 62094 string characters out of 3143546
+ 146552 words of memory out of 3000000
+ 7295 multiletter control sequences out of 15000+200000
+ 10333 words of font info for 36 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,14n,28p,896b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/local/texlive/2010/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/font
-s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr12.pfb>
-Output written on "Rapport Principal.pdf" (5 pages, 70312 bytes).
+ 38i,14n,28p,1874b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2010/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy6.pfb>
+Output written on "Rapport Principal.pdf" (44 pages, 1019944 bytes).
 PDF statistics:
- 36 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 243 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 176 words of extra memory for PDF output out of 10000 (max. 10000000)
 
